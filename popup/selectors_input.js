@@ -13,36 +13,23 @@ $('.reset').click(function (e) {
 
 $('.submit').click(function (e) {
     e.preventDefault();
-    // const pairAry = [].slice.call(document.getElementsByClassName('pair'));
-    // const selectorsPairObj = {};
-    // const pairInnerHtmlAry = pairAry.forEach(function (item, index) {
-    //     const pairInnerHtml = item.innerHTML;
-    //     let key;
-    //     pairInnerHtml.replace(/<div class="key"[^>]+>([^<]+)</, function () {
-    //         key = arguments[1];
-    //     });
-    //     let selector;
-    //     pairInnerHtml.replace(/<div class="selector"[^>]+>([^<]+)</, function () {
-    //         selector = arguments[1];
-    //     });
-    //     selectorsPairObj[key] =  selector;
-    // });
-    const selectorsObj = $('.selectors-obj').text();
 
     function reportError(error) {
         console.error(`Could not messageSelector: ${error}`);
     }
 
+    const selectorsJson = $('.selectors-obj').text();
+    // alert(selectorsJson);
     browser.tabs.query({active: true, currentWindow: true})
     .then(function (tabs) {
         browser.tabs.sendMessage(tabs[0].id, {
             // selectorsPairObj
-            selectorsObj
+           selectorsJson
         });
     })
     .catch(reportError)
     .then(function () {
-        $('.selector')[0].value = '';
+        $('.selectors-obj')[0].value = '';
     });
 });
 
