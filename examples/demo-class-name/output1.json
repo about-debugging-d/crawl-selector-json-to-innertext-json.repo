@@ -1,0 +1,6 @@
+{
+    "by-class-name": [
+        {"class-example": "class-example-1class-example-2"},
+        {"class-has-child": "\n        I am span 1.\n        I am span 2.\n        I am span 3.\n        I am span 4.\n    "}
+    ]
+}

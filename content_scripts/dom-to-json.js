@@ -33,7 +33,7 @@ function getDataAccordSelectorsObj(obj) {
         return obj;
     }
     const handledObj = handle(obj);
-    console.log(JSON.stringify(handledObj[1]));
+    console.log(JSON.stringify(handledObj));
     return handledObj;
 }
 

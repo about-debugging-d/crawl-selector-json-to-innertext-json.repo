@@ -1,11 +1,12 @@
 {
   "manifest_version": 2,
-  "name": "crawl-dom-to-json",
+  "name": "crawl-selector-json-to-innertext-json",
   "version": "1.0",
 
-  "description": "alert json which according by your option such as selector.",
+  "description": "alert innerText json which according your input selectors json string.",
   "icons": {
-    "48": "icons/dom2json.48px.ico"
+    "48": "icons/dom2json.48px.ico",
+    "96": "icons/dom2json.96px.ico"
   },
 
   "permissions": [
