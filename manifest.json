@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "crawl-dom-to-json",
+  "version": "1.0",
+
+  "description": "alert json which according by your option such as selector.",
+  "icons": {
+    "48": "icons/dom2json.48px.ico"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/dom2json.32px.png",
+    "default_title": "selectors",
+    "default_popup": "popup/selectors_input.html"
+  }
+}

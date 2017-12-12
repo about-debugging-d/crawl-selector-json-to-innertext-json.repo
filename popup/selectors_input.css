@@ -1,0 +1,33 @@
+html, body {
+    width: 400px;
+}
+
+.hidden {
+    display: none;
+}
+
+.selector {
+    margin: 3% auto;
+    padding: 4px;
+    text-align: center;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+input:hover {
+    background-color: #CFF2F2;
+}
+
+input {
+    background-color: #E5F2F2;
+}
+
+.reset,
+.submit{
+    background-color: #FBFBC9;
+}
+
+.reset:hover,
+.submit:hover{
+    background-color: #EAEA9D;
+}
