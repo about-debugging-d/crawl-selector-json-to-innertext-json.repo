@@ -5,5 +5,7 @@
 
 browser.runtime.onMessage.addListener((message, sender, sendResponse) => {
     const selectorsPairObj = message.selectorsPairObj;
-    alert(JSON.stringify(selectorsPairObj));
+    const selectorsObj = message.selectorsObj;
+    // alert(JSON.stringify(selectorsPairObj));
+    alert(JSON.stringify(selectorsObj)+'123');
 });

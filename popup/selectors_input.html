@@ -8,49 +8,18 @@
 
 <body>
 <div class="popup-content">
-    <div class="pair" style="height:100px; width:300px">
-        <div class="key" contenteditable="true" style="height:40px; width:240px; border:1px solid #ccc"></div>
-        <div class="selector" contenteditable="true" style="height:40px; width:240px; border:1px solid #ccc"></div>
-    </div>
-    <div class="pair" style="height:100px; width:300px">
-        <div class="key" contenteditable="true" style="height:40px; width:240px; border:1px solid #ccc"></div>
-        <div class="selector" contenteditable="true" style="height:40px; width:240px; border:1px solid #ccc"></div>
-    </div>
-    <!--<form name="form1" class="pair">-->
-        <!--<input class="key" type="text">-->
-        <!--<input class="selector" type="text" placeholder="请输入选择器名">-->
-    <!--</form>-->
-    <!--<form name="form2" class="pair">-->
-        <!--<input class="key" type="text">-->
-        <!--<input class="selector" type="text" placeholder="请输入选择器名">-->
-    <!--</form>-->
-    <!--<input class="selector" type="text" placeholder="请输入选择器名">-->
-    <!--<input class="selector" type="text" placeholder="请输入选择器名">-->
-    <!--<div class="submit" id="submit" style="width:60px; height:30px ">submit</div>-->
-    <!--<form>-->
-        <!---->
-    <!--</form>-->
+    <div class="selectors-obj" contenteditable="true" style="height:400px; width:600px; border:1px solid #ccc"></div>
     <input class="submit" type="submit" value="提交">
     <input class="reset" type="reset" value="还原">
 </div>
 <div id="error-content" class="hidden">
-    <p>Can't beastify this web page.</p>
+    <p>Can't handle this web page.</p>
     <p>Try a different page.</p>
 </div>
-<script>document.querySelector('submit').onclick="alert('hello')"</script>
+<script>document.querySelector('submit').onclick = "alert('hello')"</script>
 <script src="node_modules/jquery/dist/jquery.min.js"></script>
 <script src="selectors_input.js"></script>
 <script>
-    // $('.submit').click(function (e) {
-    //     e.preventDefault();
-    //     // const pairAry = [].slice.call(document.getElementsByClassName('pair'));
-    //     const pairAry = [].slice.call(document.getElementsByTagName('form'));
-    //     const pairInnerHtmlAry = pairAry.map(function (item) {
-    //         return item.innerHTML;
-    //     });
-    //     // alert(JSON.stringify(pairAry) + '123');
-    //     alert(JSON.stringify(pairInnerHtmlAry) + '123');
-    // })
 </script>
 </body>
 
