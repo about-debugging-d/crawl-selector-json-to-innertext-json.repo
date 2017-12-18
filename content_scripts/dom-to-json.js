@@ -20,7 +20,7 @@ function getDataAccordSelectorsObj(obj) {
                 const subSelectorObjsAry = item;
                 const newSubSelectorObjsAry = subSelectorObjsAry.map(function (subObj) {
                     const newObj = handle(subObj);
-                    alert(JSON.stringify(newObj));
+                    // alert(JSON.stringify(newObj));
                     return newObj;
                 });
                 obj[key] = newSubSelectorObjsAry;
@@ -28,6 +28,7 @@ function getDataAccordSelectorsObj(obj) {
             else if(checkedObjectType === "[object String]"){
                 const selectorStr = item;
                 obj[key] = $(selectorStr).text();
+                console.log($(selectorStr).html());
             }
         }
         return obj;

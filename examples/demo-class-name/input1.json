@@ -1,10 +1,7 @@
 {
   "by-class-name": [
     {
-      "class-example": ".class-example"
-    },
-    {
-      "class-has-child": ".class-has-child"
+      "class-example": ".poster"
     }
   ]
 }
